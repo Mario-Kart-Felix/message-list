@@ -2,7 +2,7 @@ import React from 'react';
 
 import MessageContext from './message.context';
 
-function MessagesSort() {
+function MessageListSort() {
     return (
         <MessageContext.Consumer>
             {context => (
@@ -25,4 +25,4 @@ function MessagesSort() {
     )
 }
 
-export default MessagesSort;
+export default MessageListSort;

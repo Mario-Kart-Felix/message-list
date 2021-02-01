@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 
 import MessageContext from './message.context';
 
-import MessagesSort from './messages-sort.component';
+import MessageListSort from './message-list-sort.component';
 import Message from './message.component';
 
 function MessageList({messages}) {
@@ -28,7 +28,7 @@ function MessageList({messages}) {
                 <div className="messages-container">
                     <div className="messages-header-container">
                         <h1>Messages</h1>
-                        <MessagesSort />
+                        <MessageListSort />
                     </div>
                     <div className="message-list-container">
                         <ul className="message-list">
