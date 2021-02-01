@@ -1,4 +1,4 @@
-# This is a small React app to meet the requirements listed below:
+# Modern Health - Displaying Deduplicated Chat Messages
 
 We have a small dataset of chat messages in a JSON file that we need to display to meet the following specifications:
 
@@ -18,3 +18,9 @@ welcome to implement this how you see fit, e.g. infinite scrolling, a button, et
 
 - Pagination is infinite scrolling since it was a good opportunity for me to work with IntersectionObserver.
 - Data changes do not persist and will be reset on page refresh. Deduplicated items will be removed again but deleted items will reappear.
+
+## To run this application:
+
+1. Open the ModernHealth directory in a terminal window.
+2. To install dependencies run `npm install`.
+3. To start the server run `npm start`. A browser window should open, if not navigate to `http://localhost:3000/`.
