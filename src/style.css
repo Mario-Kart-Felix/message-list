@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+p {
+  font-size: 1rem;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #FF5573;
+}
+
+.messages-container {
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+  border: 5px solid #888;
+  margin: 0 auto;
+}
+
+.messages-header-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0 1vh;
+}
+
+.message-list {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  border: 5px solid #1DC6D8;
+  padding: 1vh;
+  margin: 1vh;
+  height: 16vh;
+  border-radius: 0 20px 20px 20px;
+  position: relative;
+}
+
+.message-section-heading {
+  font-weight: 700;
+}
+
+/* Button Styles */
+
+.link-button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #748189;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.link-button:focus:not(:focus-visible) { 
+  outline: 0; 
+}
+
+.link-button.close {
+  opacity: 0.4;
+}
+
+.link-button.close:before {
+  content: "\00d7";
+}
+
+.link-button.close:hover {
+  opacity: 1;
+}
+
+.link-button.desc:before {
+  content: "\2191";
+}
+
+.link-button.asc:before {
+  content: "\2193";
+}
+
+.link-button.desc,
+  .link-button.asc {
+    color: #1DC6D8;
+    font-size: 2.5rem;
+    padding: 1.115rem 1rem;
+}
+
+.link-button.desc:hover,
+  .link-button.asc:hover,
+  .link-button.desc.active,
+  .link-button.asc.active {
+    color: #2B56DE;
+}
+
+.message .link-button.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0px;
+}
